@@ -82,10 +82,4 @@ on_success:
 - git add *.psd1
 - git add *.md
 - git commit -m "[skip ci] AppVeyor Build %APPVEYOR_BUILD_VERSION%"
-- ps: >-
-    try{
-    write-host "Test"
-    git push -erroraction stop
-    }catch{
-      write-host "could not push"
-    }
+- git push 
