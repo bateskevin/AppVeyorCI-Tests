@@ -1,8 +1,13 @@
-write-host  "Hello World!"
+$a = "RemoteRegistry"
+try{
+  Get-Service $a -Erroraction stop
+}catch {
+  $_
+}
 
-function test ($String,$a){
+function test ($String){
   
-  write-host $a
+  
   Return "This was your word: $String"
   
   
