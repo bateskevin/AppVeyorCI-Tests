@@ -10,7 +10,7 @@ Describe "Testing PSMarkdown" {
     Context "Test" {
         it "[PSMarkdown][Test] The return value should contain the value passed on the parameter"{
             $Val = Test -String "ABC"
-            $Val | should belike "ABC"
+            $Val | should belike "*ABC"
         }
     }
 }
