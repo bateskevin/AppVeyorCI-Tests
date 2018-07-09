@@ -1,4 +1,4 @@
-Import-Module -Force -Name ..\PSMarkdown.psd1
+Import-Module -Force -Name .\PSMarkdown.psd1
 
 Describe "Testing PSMarkdown" {
     Context "Importing the Module" {
