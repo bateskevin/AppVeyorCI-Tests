@@ -67,7 +67,7 @@ test_script:
         write-host "Module would not be deployed to the psgallery" -forgroundcolor Yellow;
     }
     
-    $manifestpath = "$env:APPVEYOR_PROJECT_NAME.psd1"
+    $manifestpath = ".\"+"$env:APPVEYOR_PROJECT_NAME"+".psd1"
     $manifest = Test-ModuleManifest -Path $manifestPath;
     [System.Version]$version = $manifest.Version;
     [String]$newVersion = New-Object -TypeName System.Version -ArgumentList ($version.Major, $version.Minor, $version.Build, ($version.Revision+1));
