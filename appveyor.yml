@@ -70,7 +70,7 @@ test_script:
     $manifestpath = ".\"+"$env:APPVEYOR_PROJECT_NAME"+".psd1";
     $manifest = Test-ModuleManifest -Path $manifestPath;
     [System.Version]$version = $manifest.Version;
-    [String]$newVersion = New-Object -TypeName System.Version -ArgumentList ($version.Major, $version.Minor, $version.Build, ($version.Revision+1));
+    [String]$newVersion = New-Object -TypeName System.Version -ArgumentList ($version.Major, $version.Minor, ($version.Build + 1));
     Update-ModuleManifest -Path $manifestPath -ModuleVersion $newVersion;
     
 on_success:  
