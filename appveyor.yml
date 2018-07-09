@@ -23,7 +23,7 @@ test_script:
             $CodeCoverage = 0,
 
             [string]
-            $TextFilePath = "$Env:BHProjectPath\Readme.md"
+            $TextFilePath = ".\Readme.md"
         
         )
 
