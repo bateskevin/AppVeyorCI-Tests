@@ -75,4 +75,9 @@ on_success:
 - git checkout %APPVEYOR_REPO_BRANCH%
 - git add *.md
 - git commit -m "[skip ci] AppVeyor Build %APPVEYOR_BUILD_VERSION%"
-- git push
+- ps: >-
+    try{
+    git push -erroraction stop
+    }catch{
+      write-host "could not push"
+    }
