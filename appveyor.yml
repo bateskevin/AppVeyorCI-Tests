@@ -67,12 +67,19 @@ test_script:
         write-host "Module would not be deployed to the psgallery" -forgroundcolor Yellow;
     }
     
+    $manifestpath = "$env:APPVEYOR_PROJECT_NAME.psd1"
+    $manifest = Test-ModuleManifest -Path $manifestPath;
+    [System.Version]$version = $manifest.Version;
+    [String]$newVersion = New-Object -TypeName System.Version -ArgumentList ($version.Major, $version.Minor, $version.Build, ($version.Revision+1));
+    Update-ModuleManifest -Path $manifestPath -ModuleVersion $newVersion;
+    
 on_success:  
 - git config --global credential.helper store
 - ps: Add-Content "$HOME\.git-credentials" "https://$($env:GitToken):x-oauth-basic@github.com`n"
 - git config --global user.email "build@appveyor.com"
 - git config --global user.name "Appveyor"
 - git checkout %APPVEYOR_REPO_BRANCH%
+- git add *.psd1
 - git add *.md
 - git commit -m "[skip ci] AppVeyor Build %APPVEYOR_BUILD_VERSION%"
 - ps: >-
