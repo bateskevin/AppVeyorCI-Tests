@@ -8,7 +8,7 @@ install:
     
     Install-Module -Name PSScriptAnalyzer -Force
     
-    Install-Module -Name Pester -Force -verbose
+    Install-Module -Name Pester -Force
 
 build: off
 test_script:
@@ -71,6 +71,7 @@ test_script:
     $manifest = Test-ModuleManifest -Path $manifestPath;
     [System.Version]$version = $manifest.Version;
     [String]$newVersion = New-Object -TypeName System.Version -ArgumentList ($version.Major, $version.Minor, ($version.Build + 1));
+    write-host "Going to increment Version number from $Version to $NewVersion"-forgroundcolor green;
     Update-ModuleManifest -Path $manifestPath -ModuleVersion $newVersion;
     
 on_success:  
