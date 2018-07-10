@@ -1,5 +1,5 @@
-# PSMarkdown
-DSL to write Markdown documents in Powershell
+# AppVeyor CI Tests
+This Repo is just for testing purposes of the appveyor CI
 
 ### Appveyor
 | Name        | Status           |
