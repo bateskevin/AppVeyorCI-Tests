@@ -9,4 +9,4 @@ This Repo is just for testing purposes of the appveyor CI
 | Dev Branch      | [![Build status](https://ci.appveyor.com/api/projects/status/qhmgyx1dg861wvh9/branch/Dev?svg=true)](https://ci.appveyor.com/project/bateskevin/psmarkdown/branch/Dev)      |
 | Current Build      | [![Build status](https://ci.appveyor.com/api/projects/status/qhmgyx1dg861wvh9?svg=true)](https://ci.appveyor.com/project/bateskevin/psmarkdown)      |
 | Test Status      | ![AppVeyor tests branch](https://img.shields.io/appveyor/tests/bateskevin/PSMarkdown/master.svg)      |
-| Code Coverage      | ![Test Coverage](https://img.shields.io/badge/coverage-1%25-red.svg?maxAge=60)      |
+| Code Coverage      | ![Test Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?maxAge=60)      |
