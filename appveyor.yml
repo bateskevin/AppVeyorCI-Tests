@@ -12,7 +12,7 @@ install:
 
 build: off
 test_script:
-- ps: .\build.ps1
+- ps: .\CI\build.ps1
     
 on_success:  
 - git config --global credential.helper store
