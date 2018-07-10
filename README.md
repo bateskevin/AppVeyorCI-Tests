@@ -20,4 +20,4 @@ Wanna contribute? please take a look at these files before you start:
 
 ### Licencing
 
-This Project is licenced under the [MIT Licence](docs/LICENCE)
+This Project is licenced under the [MIT Licence](Docs/LICENSE)
