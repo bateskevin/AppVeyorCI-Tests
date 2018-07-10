@@ -1,9 +1,9 @@
-Import-Module -Force -Name .\AppVeyorCI-Tests.psd1
+Import-Module -Force -Name .\AppVeyorCI-Test.psd1
 
 Describe "Testing PSMarkdown" {
     Context "Importing the Module" {
         it "[PSMarkdown][Module] The module should be available after the import" {
-            $Module = Get-Module psmarkdown
+            $Module = Get-Module AppVeyorCI-Test
             $Module | should be $true
         }
     }
