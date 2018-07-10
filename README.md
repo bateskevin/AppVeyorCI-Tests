@@ -15,5 +15,5 @@ This Repo is just for testing purposes of the appveyor CI
 
 Wanna contribute? please take a look at these files before you start:
 
-* [Code of Conduct](CODE_OF_CONDUCT.md)
-* [Contribution Guide](CONTRIBUTING.md)
+* [Code of Conduct](Docs/CODE_OF_CONDUCT.md)
+* [Contribution Guide](Docs/CONTRIBUTING.md)
