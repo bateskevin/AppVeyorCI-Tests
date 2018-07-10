@@ -12,5 +12,8 @@ Describe "Testing PSMarkdown" {
             $Val = Test -String "ABC"
             $Val | should belike "*ABC"
         }
+        it "logically"{
+            $true | Should be $true
+        }        
     }
 }
