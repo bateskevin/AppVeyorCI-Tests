@@ -10,3 +10,10 @@ This Repo is just for testing purposes of the appveyor CI
 | Current Build      | [![Build status](https://ci.appveyor.com/api/projects/status/qhmgyx1dg861wvh9?svg=true)](https://ci.appveyor.com/project/bateskevin/psmarkdown)      |
 | Test Status      | ![AppVeyor tests branch](https://img.shields.io/appveyor/tests/bateskevin/PSMarkdown/master.svg)      |
 | Code Coverage      | ![Test Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?maxAge=60)      |
+
+### Contribute
+
+Wanna contribute? please take a look at these files before you start:
+
+* [Code of Conduct](CODE_OF_CONDUCT.md)
+* [Contribution Guide](CONTRIBUTING.md)
