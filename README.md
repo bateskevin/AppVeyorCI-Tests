@@ -17,3 +17,7 @@ Wanna contribute? please take a look at these files before you start:
 
 * [Code of Conduct](Docs/CODE_OF_CONDUCT.md)
 * [Contribution Guide](Docs/CONTRIBUTING.md)
+
+### Licencing
+
+This Project is licenced under the [MIT Licence](docs/LICENCE.md)
