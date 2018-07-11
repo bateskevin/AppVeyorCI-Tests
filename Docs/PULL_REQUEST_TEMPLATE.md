@@ -12,3 +12,6 @@ Select one of the following:
 ### Description of what's been changed
 [write here]
 
+### Results of your tests
+[Screenshot of Pestertests here]
+
